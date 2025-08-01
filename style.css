@@ -1,5 +1,10 @@
 /* header section */
 
+body {
+    overflow-x: hidden;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -102,8 +107,7 @@ sup{
 
 .banner_disc{
     width: 100%;
-    width: 1460px;
-    height: 110px;
+    max-width: 100%;
 }
 .disc_container{
     margin-top: 30px;
@@ -131,13 +135,13 @@ sup{
     justify-content: center;
 }
 .changing_pic{
-    width: 1440px;
-    height: 130px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .msg{
-    width: 1300px;
-    height: 200px;
+    width: 100%;
+    max-width: 100%;
 }
 .msg_container{
     display: flex;
@@ -161,7 +165,8 @@ sup{
 .big_deal_banner{
     margin-top: 45px;
     margin-bottom: 20px;
-    width: 1420px;
+    width: 100%;
+    max-width: 100%;
 }
 .big_deal_items_container{
     display: flex;
@@ -177,7 +182,8 @@ sup{
     justify-content: center;
 }
 .category_banner{
-    width: 1510px;
+    width: 100%;
+    max-width: 100%;
 }
 .category_items_container{
     display: flex;
