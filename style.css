@@ -506,34 +506,39 @@ sup{
     display: none;
   }
 
-  /* Force the search to land on its own full-width row */
   .search_container {
-    order: 4;                   /* after the first-row items */
-    flex-basis: 100%;           /* full-width */
+    order: 4;
     width: 100%;
     display: flex;
-    justify-content: center;
-    padding: 8px;
+    gap: 0;              /* no space between icon and input */
+    padding: 0 8px;
+    margin-top: 6px;
     box-sizing: border-box;
-    margin-top: 4px;
-  }
+    background: #f5f5f6;  
+    border-radius: 8px;    /* rounded corners for whole bar */
+    overflow: hidden;      
+}
 
-  /* Make the input fill the search area nicely */
-  .search_container .input_bar {
-    width: 100%;
-    height: 40px;
-    border-radius: 8px;
-    padding: 8px 12px;
-    border: 0;
-    background: #f5f5f6;
-    box-sizing: border-box;
-  }
-  .search_container .search_bar {
-    display: inline-flex;
+.search_bar {
+    flex: 0 0 40px;       /* fixed width */
+    display: flex;
     align-items: center;
-    margin-right: 8px;
-    padding: 6px;
-  }
+    justify-content: center;
+    background: transparent; /* no separate background */
+    height: 100%;          /* match container height */
+    padding: 0;
+    margin: 0;
+}
+
+.input_bar {
+    flex: 1;              /* fill remaining space */
+    border: none;         /* remove border */
+    outline: none;        /* remove focus outline */
+    padding: 0 12px;
+    height: 100%;         /* match container height */
+    background: transparent; /* same as container */
+    font-size: 14px;
+}
 
   /* hide desktop nav links on mobile */
   .nav_bar {
